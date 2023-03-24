@@ -1,0 +1,62 @@
+:root {
+  --color--background1: #efefef;
+  --color--background2: #ffffff;
+  --color--success: #00805a;
+  --color--label: #b00020;
+  --color--text: #000000bc;
+}
+
+.loginWrapper {
+  background-color: var(--color--background1);
+  padding: 65px 0;
+  width: 100vw;
+}
+
+.formWrapper {
+  background-color: var(--color--background2);
+  border-radius: 4px;
+  display: grid;
+  gap: 16px;
+  justify-items: center;
+  margin: 0 auto;
+  padding: 312px 220px;
+  width: 328px;
+}
+
+.logo {
+  height: 128px;
+  width: 128px;
+}
+
+.textField label {
+  color: var(--color--label) !important;
+}
+
+.textField p {
+  margin-top: 2px;
+}
+
+.textField input {
+  color: var(--color--text);
+}
+
+.formWrapper button {
+  justify-self: end;
+  margin-top: 2px;
+  padding: 9px 26px 8px 27px;
+}
+
+.success {
+  color: var(--color--success);
+  width: 100%;
+}
+
+@media (max-width: 481px) {
+  .loginWrapper {
+    padding: 281px 30px;
+  }
+
+  .formWrapper {
+    padding: 22px;
+  }
+}

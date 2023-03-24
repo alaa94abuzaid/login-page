@@ -1,0 +1,5 @@
+export const validateEmail = (email) => {
+  const validRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+  return !!email.match(validRegex);
+};
